@@ -13,6 +13,18 @@
 <section class="auth-box">
   <h2>Buat Akun Baru</h2>
 
+  <?php
+  if (isset($_GET['error'])) {
+      if ($_GET['error'] == 'empty') {
+          echo '<div class="alert alert-error"> Semua kolom harus diisi!</div>';
+      } elseif ($_GET['error'] == 'exists') {
+          echo '<div class="alert alert-error"> Email sudah terdaftar! Gunakan email lain.</div>';
+      } elseif ($_GET['error'] == 'failed') {
+          echo '<div class="alert alert-error"> Pendaftaran gagal! Coba lagi.</div>';
+      }
+  }
+  ?>
+
   <form action="auth/process_register.php" method="POST">
     <input type="text" name="nama" placeholder="Nama Lengkap" required>
     <input type="email" name="email" placeholder="Email" required>

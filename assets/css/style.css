@@ -127,7 +127,7 @@ ul {
       rgba(0, 0, 0, 0.45),
       rgba(0, 0, 0, 0.45)
     ),
-    url('../img/angkot.jpg');
+    url('../img/angkot1.png');
 
   background-size: cover;
   background-position: center;
@@ -599,6 +599,24 @@ ul {
 .auth-box p a {
   color: #667eea;
   font-weight: 600;
+}
+
+/* tampilan error */
+.alert {
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      font-size: 14px;
+}
+.alert-success {
+      background-color: #dfd;
+      color: #050;
+      border: 1px solid #cfc;
+}
+.alert-error {
+      background-color: #fee;
+      color: #c00;
+      border: 1px solid #fcc;
 }
 
 /* ========== FOOTER ========== */

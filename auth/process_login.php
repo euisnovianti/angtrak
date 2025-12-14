@@ -4,7 +4,7 @@ include "../config/database.php";
 
 // Validasi input
 if (!isset($_POST['email']) || !isset($_POST['password'])) {
-    header("Location: login.php?error=empty");
+    header("Location: ../login.php?error=empty");
     exit;
 }
 
@@ -32,7 +32,7 @@ if ($user && password_verify($password, $user['password'])) {
     exit;
 } else {
     // Login gagal
-    header("Location: login.php?error=invalid");
+    header("Location: ../login.php?error=invalid");
     exit;
 }
 ?>
