@@ -15,7 +15,7 @@ if (!isset($_SESSION['login'])) {
     <link rel="stylesheet" href="../assets/css/style.css"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* CSS Khusus Dashboard sederhana */
+        /* Dashboard */
         .dashboard-container {
             max-width: 1000px;
             margin: 50px auto;

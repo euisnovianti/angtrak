@@ -20,7 +20,7 @@ $check_result = mysqli_stmt_get_result($stmt);
 
 if (mysqli_num_rows($check_result) > 0) {
     // Email sudah terdaftar
-    header("Location: /register.php?error=exists");
+    header("Location: ../register.php?error=exists");
     exit;
 }
 

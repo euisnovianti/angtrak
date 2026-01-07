@@ -1,6 +1,6 @@
 <?php
 // Proteksi halaman - harus login dulu
-include '../cek_login.php';
+include '../cekLogin.php';
 ?>
 <!DOCTYPE html>
 <html lang="id">
